@@ -16,12 +16,14 @@ public class CheckoutSteps {
     // This class will contain step definitions related to the checkout process
     // such as entering shipping information, completing the purchase, etc.
 
-    WebDriver driver = DriverFactory.getDriver(); // Get the WebDriver instance from DriverFactory
-    CartPage cartPage = new CartPage(Hooks.getDriver()); // Create an instance of CartPage
-    CheckoutPage checkoutPage = new CheckoutPage(Hooks.getDriver()); // Create an instance of CheckoutPage
+    WebDriver driver; // Get the WebDriver instance from DriverFactory
+    CartPage cartPage; // Create an instance of CartPage
+    CheckoutPage checkoutPage; // Create an instance of CheckoutPage
 
     @And("der Benutzer klickt auf den Button \"Checkout\"")
     public void clickCheckoutButton() {
+        driver = DriverFactory.getDriver();
+        checkoutPage = new CheckoutPage(driver);
         checkoutPage.clickCheckout(); // Click the checkout button on the cart page
     }
 
@@ -41,6 +43,7 @@ public class CheckoutSteps {
 
     @Then("werden das {string} und die Einkaufsinformationen angezeigt")
     public void verifyCheckoutInformation(String ProductName) {
+        cartPage = new CartPage(driver);
         // Verify that the checkout information is displayed correctly
         String description = checkoutPage.getDescriptionLabel();
         String paymentInfo = checkoutPage.getPaymentInfoLabel();
@@ -53,7 +56,7 @@ public class CheckoutSteps {
         assertEquals("Shipping Information:", shippingInfo);
         assertEquals("Price Total", priceTotal);
 
-        // You can also verify the product name if needed
+        // You can also verify the product name if needed       
         String productNameInCart = cartPage.getProductName(ProductName);
         assertEquals("Product name in cart does not match", ProductName, productNameInCart);
 
