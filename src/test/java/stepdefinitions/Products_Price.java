@@ -22,12 +22,14 @@ public class Products_Price {
     // This class will contain step definitions related to product price verification
     // such as checking the price of products, comparing prices, etc.
 
-    WebDriver driver = Hooks.getDriver(); ; // Get the WebDriver instance from DriverFactory
-    ProductsPage productsPage = new ProductsPage(driver); // Create an instance of ProductsPage
-    CartPage cartPage = new CartPage(driver); // Create an instance of CartPage
+    WebDriver driver; // Get the WebDriver instance from DriverFactory
+    ProductsPage productsPage; // Create an instance of ProductsPage
+    CartPage cartPage; // Create an instance of CartPage
     
     @Given("der Benutzer sieht das Produkt {string}")
     public void userSeesProduct(String productName) {
+        driver = Hooks.getDriver();
+        productsPage = new ProductsPage(driver); 
         // Warte, bis Produktseite sichtbar ist – z. B. Titel "Products"
         new WebDriverWait(driver, Duration.ofSeconds(5))
         .until(ExpectedConditions.visibilityOfElementLocated(By.className("title")));
@@ -48,6 +50,7 @@ public class Products_Price {
     
     @And("wird der {string} für das {string} im Warenkorb angezeigt")
     public void verifyPriceAndProductName(String expectedPrice, String productName) {
+        cartPage = new CartPage(driver);
         // Verify that the product name is displayed correctly
         String actualName = cartPage.getProductName(productName);
        // Verify that the product price is displayed correctly     
