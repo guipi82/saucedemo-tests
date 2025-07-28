@@ -12,16 +12,15 @@ import pages.ProductsPage;
 import utils.Hooks;
 
 public class LogoutSteps {
+    // This class will contain step definitions related to user logout actions   
     WebDriver driver;
-    ProductsPage productsPage;
-    LoginPage loginPage;
-    
-    // This class will contain step definitions related to user logout actions
-    driver = Hooks.getDriver(); 
-    productsPage = new ProductsPage(driver); // Create an instance of ProductsPage
+    ProductsPage productsPage;  // Create an instance of ProductsPage
+    LoginPage loginPage; 
      
     @Given("der Benutzer klickt auf das Burger-Menü")
     public void clickOnBurgerMenu() {
+        driver = Hooks.getDriver(); 
+        productsPage = new ProductsPage(driver);
         productsPage.clickOnBurgerMenu(); // Click the burger menu to open the side menu
     }
     
