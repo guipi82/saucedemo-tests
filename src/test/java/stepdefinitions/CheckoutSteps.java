@@ -83,7 +83,7 @@ public class CheckoutSteps {
     public void verifyUserOnProductsPage() {
         String productsTitle = checkoutPage.getProductsTitle();
         assertEquals("Products", productsTitle); // Verify that the user is on the products page
-        String badgeText = cartPage.productnberInCart();
+        String badgeText = cartPage.getProductCountInCart();
         assertEquals(null, badgeText); // Verify that the cart is empty
 
     }
