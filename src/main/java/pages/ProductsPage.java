@@ -97,16 +97,25 @@ public class ProductsPage {
     }
 
     public void clickOnBurgerMenu() {
+        // Wait for the burger menu to be visible before clicking
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(burgerMenu));
         // Click the burger menu to open the side menu
         driver.findElement(burgerMenu).click();
     }
 
     public void clickOnLogout() {
+        // Wait for the burger menu to be visible before clicking
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(logoutLink));
         // Click the logout option from the burger menu
         driver.findElement(logoutLink).click();
     }
 
     public void clickOnAbout() {
+        // Wait for the burger menu to be visible before clicking
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(aboutLink));
         // Click the "About" link from the burger menu
         driver.findElement(aboutLink).click();
     }

@@ -27,7 +27,6 @@ public class CheckoutPage {
     private By postalCodeField = By.id("postal-code");
     private By continueButton = By.id("continue");
     private By finishButton = By.id("finish");
-    private By logo = By.cssSelector("div.app_logo");
     private By BackHomeButton = By.id("back-to-products");
     private By descriptionLabel = By.cssSelector("[data-test='cart-desc-label']");
     private By paymentInfoLabel = By.cssSelector("[data-test='payment-info-label']");
