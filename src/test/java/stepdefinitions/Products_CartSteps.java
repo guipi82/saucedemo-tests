@@ -98,11 +98,11 @@ public class Products_CartSteps {
    public void emptyCart() {
       WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
       wait.until(d -> {
-         String count = cartPage.productnberInCart();
+         String count = cartPage.getProductCountInCart();
          return count == null || count.equals("0") || count.isBlank();
       });
 
-      String noProductFound = cartPage.productnberInCart();
+      String noProductFound = cartPage.getProductCountInCart();
       assertTrue(noProductFound == null || noProductFound.equals("0") || noProductFound.isBlank());
    }
 }
