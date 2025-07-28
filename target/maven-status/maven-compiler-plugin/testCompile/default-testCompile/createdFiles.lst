@@ -1,0 +1,12 @@
+stepdefinitions\LoginSteps.class
+utils\DriverFactory.class
+runners\TestRunner.class
+stepdefinitions\PageNavigationSteps.class
+stepdefinitions\productsPage.class
+utils\Hooks.class
+stepdefinitions\LogoutSteps.class
+stepdefinitions\Products_CartSteps.class
+stepdefinitions\Products_Price.class
+stepdefinitions\ProductSortingSteps.class
+com\saucedemo\tests\AppTest.class
+stepdefinitions\CheckoutSteps.class

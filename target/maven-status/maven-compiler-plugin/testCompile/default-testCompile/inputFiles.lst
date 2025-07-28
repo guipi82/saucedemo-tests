@@ -1,0 +1,12 @@
+C:\Users\sidie\saucedemo-automation\saucedemo-tests\src\test\java\com\saucedemo\tests\AppTest.java
+C:\Users\sidie\saucedemo-automation\saucedemo-tests\src\test\java\runners\TestRunner.java
+C:\Users\sidie\saucedemo-automation\saucedemo-tests\src\test\java\stepdefinitions\CheckoutSteps.java
+C:\Users\sidie\saucedemo-automation\saucedemo-tests\src\test\java\stepdefinitions\LoginSteps.java
+C:\Users\sidie\saucedemo-automation\saucedemo-tests\src\test\java\stepdefinitions\LogoutSteps.java
+C:\Users\sidie\saucedemo-automation\saucedemo-tests\src\test\java\stepdefinitions\PageNavigationSteps.java
+C:\Users\sidie\saucedemo-automation\saucedemo-tests\src\test\java\stepdefinitions\Products_CartSteps.java
+C:\Users\sidie\saucedemo-automation\saucedemo-tests\src\test\java\stepdefinitions\Products_Price.java
+C:\Users\sidie\saucedemo-automation\saucedemo-tests\src\test\java\stepdefinitions\ProductSortingSteps.java
+C:\Users\sidie\saucedemo-automation\saucedemo-tests\src\test\java\stepdefinitions\productsPage.java
+C:\Users\sidie\saucedemo-automation\saucedemo-tests\src\test\java\utils\DriverFactory.java
+C:\Users\sidie\saucedemo-automation\saucedemo-tests\src\test\java\utils\Hooks.java
