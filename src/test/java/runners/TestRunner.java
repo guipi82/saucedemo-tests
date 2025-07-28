@@ -6,7 +6,7 @@ import org.junit.runner.RunWith; // Import JUnit runner
 @CucumberOptions(
     features = "src/test/resources/features", // Path to the feature files
     glue = {"stepdefinitions", "utils"}, // Package containing step definitions
-    plugin = {"pretty", "html:target/cucumber-reports.html"}, // Plugins for reporting
+    plugin = {"pretty", "html:target/cucumber-reports.html"}, "json:target/cucumber.json" // Plugins for reporting
     monochrome = true// Make console output more readable
     //tags = "@Navigation" //Run tests with the @Login tag
 ) // Cucumber options for test execution
