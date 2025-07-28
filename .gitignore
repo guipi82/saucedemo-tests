@@ -1,0 +1,22 @@
+# Maven build output
+/target/
+
+# IntelliJ/Eclipse/IDE-Projektdateien
+.idea/
+*.iml
+*.classpath
+*.project
+.settings/
+
+# Betriebssystem-spezifisch
+.DS_Store
+Thumbs.db
+
+# Test- und Log-Dateien
+*.log
+*.html
+*.xml
+
+# Temporäre Dateien
+*.swp
+*.tmp
