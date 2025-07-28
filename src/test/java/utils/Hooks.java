@@ -12,25 +12,23 @@ import io.cucumber.java.Before;
  */
 public class Hooks {
 
-    public static WebDriver driver;
-
     @Before
     public void setUp() {
         // Browser als JVM-Parameter lesen (default: chrome)
             String browser = System.getProperty("browser", "chromeheadless"); // Default to Chrome if not specified
-            driver = DriverFactory.createDriver(browser); // Create WebDriver instance using DriverFactory      
+            DriverFactory.createDriver(browser); // Create WebDriver instance using DriverFactory      
  
     }
 
     @After
     public void tearDown() {
         // Quit the WebDriver after each scenario
-        DriverFactory.quitDriver(driver); // Ensure the driver is quit after each scenario
+        DriverFactory.quitDriver(DriverFactory.getDriver()); // Ensure the driver is quit after each scenario
     }
 
 
     public static WebDriver getDriver() {
-        return driver;
+        return DriverFactory.getDriver();
     }  
 
     
