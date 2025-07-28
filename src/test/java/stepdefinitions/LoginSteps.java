@@ -18,7 +18,7 @@ public class LoginSteps {
 
     @Given("der Benutzer befindet sich auf der Login-Seite")
     public void userIsOnLoginPage() {
-        driver = DriverFactory.getDriver();
+        driver = Hooks.getDriver();
         loginPage = new LoginPage(driver); // Initialize the LoginPage with the WebDriver instance
         loginPage.openLoginPage(); // Open the login page using the LoginPage class 
     }
