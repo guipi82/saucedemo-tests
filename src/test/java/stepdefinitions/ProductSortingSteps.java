@@ -14,12 +14,14 @@ public class ProductSortingSteps {
     // This class will contain step definitions related to product sorting actions
     // Currently, no step definitions are provided in the context
     // You can add methods here to handle product sorting steps as needed
-    WebDriver driver = Hooks.getDriver(); // Get the WebDriver instance from DriverFactory
-    ProductsPage productsPage = new ProductsPage(driver); // Create an instance of ProductsPage
+    WebDriver driver; // Get the WebDriver instance from DriverFactory
+    ProductsPage productsPage; // Create an instance of ProductsPage
 
 
     @When("der Benutzer sortiert die Produkte nach {string}")
     public void userSortsProducts(String sortOption) {
+        driver = Hooks.getDriver();
+        productsPage = new ProductsPage(driver);
         productsPage.sortProducts(sortOption);
     }
 
