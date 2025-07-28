@@ -44,7 +44,7 @@ public class Products_Price {
     @Then("wird der {string} für das {string} angezeigt")
     public void verifyProductPrice(String expectedPrice, String productName) {
         // Verify that the product price is displayed correctly     
-        String actualPrice = productsPage.getProductPriceByName(productName);
+        String actualPrice = productsPage.getProductPrice(productName);
         assertEquals("Der Preis des Produkts stimmt nicht überein", expectedPrice, actualPrice);
     }    
     
