@@ -17,7 +17,7 @@ public class Hooks {
     @Before
     public void setUp() {
         // Browser als JVM-Parameter lesen (default: chrome)
-            String browser = System.getProperty("browser", "chrome"); // Default to Chrome if not specified
+            String browser = System.getProperty("browser", "chromeheadless"); // Default to Chrome if not specified
             driver = DriverFactory.createDriver(browser); // Create WebDriver instance using DriverFactory      
  
     }
