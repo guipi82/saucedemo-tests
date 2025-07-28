@@ -18,13 +18,15 @@ import utils.Hooks;
 
 public class PageNavigationSteps {
     
-    WebDriver driver = Hooks.getDriver(); // Get the WebDriver instance from Hooks
-    ProductsPage productsPage = new ProductsPage(driver); // Create an instance of ProductsPage
-    CartPage cartPage = new CartPage(driver); // Create an instance of CartPage
+    WebDriver driver; // Get the WebDriver instance from Hooks
+    ProductsPage productsPage; // Create an instance of ProductsPage
+    CartPage cartPage; // Create an instance of CartPage
     
 
     @When("der Benutzer wählt \"About\" aus")
     public void userNavigatesToProductsPage() {
+        driver = Hooks.getDriver();
+        productsPage = new ProductsPage(driver);
         productsPage.clickOnAbout();
     }
 
