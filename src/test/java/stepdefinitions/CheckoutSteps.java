@@ -16,8 +16,6 @@ public class CheckoutSteps {
     // This class will contain step definitions related to the checkout process
     // such as entering shipping information, completing the purchase, etc.
 
-    // You can implement methods similar to the LoginSteps and Products_CartSteps
-    // to handle the checkout process using the CheckoutPage class.
     WebDriver driver = DriverFactory.getDriver(); // Get the WebDriver instance from DriverFactory
     CartPage cartPage = new CartPage(Hooks.getDriver()); // Create an instance of CartPage
     CheckoutPage checkoutPage = new CheckoutPage(Hooks.getDriver()); // Create an instance of CheckoutPage
@@ -78,7 +76,7 @@ public class CheckoutSteps {
         checkoutPage.clickBackToProducts(); // Click the back to products button
     }
 
-    @Then("der Benutzer befindet sich der Benutzer auf der Produkt-Seite und der Warenkorb ist leer")
+    @Then("der Benutzer befindet sich auf der Produkt-Seite und der Warenkorb ist leer")
     public void verifyUserOnProductsPage() {
         String productsTitle = checkoutPage.getProductsTitle();
         assertEquals("Products", productsTitle); // Verify that the user is on the products page

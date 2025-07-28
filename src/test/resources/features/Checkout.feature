@@ -1,10 +1,11 @@
 @checkout
 Feature: Checkout-Prozess
 
-  Hintergrund:
-    Given der Benutzer befindet sich auf der Produkt-Seite
+  Background:
+    Given der Benutzer befindet sich auf der Login-Seite
+    When der Benutzer gibt "standard_user" und "secret_sauce" ein
+    Then wird die Produkte-Seite angezeigt
 
-  @SingleProductCheckout
   Scenario Outline: Erfolgreicher Checkout
     Given der Benutzer wählt das "<Produkt>" aus
     When der Benutzer klickt auf "Add to cart"
@@ -17,7 +18,7 @@ Feature: Checkout-Prozess
     When der Benutzer klickt auf den Button "Finish"
     Then erhält der Benutzer eine Bestätigung seines Einkaufs
     And klickt auf den Button "Back Home"
-    Then der Benutzer befindet sich der Benutzer auf der Produkt-Seite und der Warenkorb ist leer
+    Then der Benutzer befindet sich auf der Produkt-Seite und der Warenkorb ist leer
 
   Examples:
     | Produkt                  | FirstName | LastName | PostalCode |

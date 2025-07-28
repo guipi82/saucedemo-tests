@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="runners.TestRunner" time="53.519" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="runners.TestRunner" time="241.475" tests="24" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="webdriver.chrome.driver" value="C:\Users\sidie\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="DE"/>
     <property name="sun.boot.library.path" value="C:\Program Files\jdk-21.0.7+6\bin"/>
-    <property name="sun.java.command" value="C:\Users\sidie\AppData\Local\Temp\surefire13484842083161606051\surefirebooter-20250728160521501_3.jar C:\Users\sidie\AppData\Local\Temp\surefire13484842083161606051 2025-07-28T16-05-20_062-jvmRun1 surefire-20250728160521501_1tmp surefire_0-20250728160521501_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\sidie\AppData\Local\Temp\surefire7989840836889822973\surefirebooter-20250728180102171_3.jar C:\Users\sidie\AppData\Local\Temp\surefire7989840836889822973 2025-07-28T18-01-01_022-jvmRun1 surefire-20250728180102171_1tmp surefire_0-20250728180102171_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\sidie\saucedemo-automation\saucedemo-tests\target\test-classes;C:\Users\sidie\saucedemo-automation\saucedemo-tests\target\classes;C:\Users\sidie\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.0\junit-jupiter-api-5.11.0.jar;C:\Users\sidie\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\sidie\.m2\repository\org\junit\platform\junit-platform-commons\1.11.0\junit-platform-commons-1.11.0.jar;C:\Users\sidie\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\sidie\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.0\junit-jupiter-params-5.11.0.jar;C:\Users\sidie\.m2\repository\org\seleniumhq\selenium\selenium-java\4.22.0\selenium-java-4.22.0.jar;C:\Users\sidie\.m2\repository\org\seleniumhq\selenium\selenium-api\4.22.0\selenium-api-4.22.0.jar;C:\Users\sidie\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.22.0\selenium-chrome-driver-4.22.0.jar;C:\Users\sidie\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\sidie\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.22.0\selenium-chromium-driver-4.22.0.jar;C:\Users\sidie\.m2\repository\org\seleniumhq\selenium\selenium-json\4.22.0\selenium-json-4.22.0.jar;C:\Users\sidie\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.22.0\selenium-manager-4.22.0.jar;C:\Users\sidie\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.22.0\selenium-devtools-v124-4.22.0.jar;C:\Users\sidie\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.22.0\selenium-devtools-v125-4.22.0.jar;C:\Users\sidie\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v126\4.22.0\selenium-devtools-v126-4.22.0.jar;C:\Users\sidie\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.22.0\selenium-devtools-v85-4.22.0.jar;C:\Users\sidie\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.22.0\selenium-edge-driver-4.22.0.jar;C:\Users\sidie\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.22.0\selenium-firefox-driver-4.22.0.jar;C:\Users\sidie\.m2\repository\org\seleniumhq\selenium\selenium-http\4.22.0\selenium-http-4.22.0.jar;C:\Users\sidie\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\sidie\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.22.0\selenium-ie-driver-4.22.0.jar;C:\Users\sidie\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.22.0\selenium-remote-driver-4.22.0.jar;C:\Users\sidie\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\sidie\.m2\repository\io\opentelemetry\opentelemetry-api\1.39.0\opentelemetry-api-1.39.0.jar;C:\Users\sidie\.m2\repository\io\opentelemetry\opentelemetry-context\1.39.0\opentelemetry-context-1.39.0.jar;C:\Users\sidie\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.39.0\opentelemetry-exporter-logging-1.39.0.jar;C:\Users\sidie\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.39.0\opentelemetry-sdk-common-1.39.0.jar;C:\Users\sidie\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.39.0\opentelemetry-sdk-extension-autoconfigure-spi-1.39.0.jar;C:\Users\sidie\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.39.0\opentelemetry-sdk-extension-autoconfigure-1.39.0.jar;C:\Users\sidie\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.39.0-alpha\opentelemetry-api-incubator-1.39.0-alpha.jar;C:\Users\sidie\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.39.0\opentelemetry-sdk-trace-1.39.0.jar;C:\Users\sidie\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.39.0\opentelemetry-sdk-1.39.0.jar;C:\Users\sidie\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.39.0\opentelemetry-sdk-metrics-1.39.0.jar;C:\Users\sidie\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.39.0\opentelemetry-sdk-logs-1.39.0.jar;C:\Users\sidie\.m2\repository\org\seleniumhq\selenium\selenium-os\4.22.0\selenium-os-4.22.0.jar;C:\Users\sidie\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\sidie\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.22.0\selenium-safari-driver-4.22.0.jar;C:\Users\sidie\.m2\repository\org\seleniumhq\selenium\selenium-support\4.22.0\selenium-support-4.22.0.jar;C:\Users\sidie\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\sidie\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\sidie\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\sidie\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\sidie\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\sidie\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\sidie\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\sidie\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\sidie\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\sidie\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\sidie\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\sidie\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\sidie\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\sidie\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\sidie\.m2\repository\io\cucumber\cucumber-junit\7.15.0\cucumber-junit-7.15.0.jar;C:\Users\sidie\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\sidie\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\sidie\.m2\repository\net\masterthought\cucumber-reporting\5.7.3\cucumber-reporting-5.7.3.jar;C:\Users\sidie\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.2.2\jackson-databind-2.13.2.2.jar;C:\Users\sidie\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.2\jackson-annotations-2.13.2.jar;C:\Users\sidie\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.2\jackson-core-2.13.2.jar;C:\Users\sidie\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.2\jackson-datatype-jsr310-2.13.2.jar;C:\Users\sidie\.m2\repository\org\apache\velocity\velocity-engine-core\2.3\velocity-engine-core-2.3.jar;C:\Users\sidie\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\sidie\.m2\repository\joda-time\joda-time\2.10.14\joda-time-2.10.14.jar;C:\Users\sidie\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\sidie\.m2\repository\commons-io\commons-io\2.7\commons-io-2.7.jar;C:\Users\sidie\.m2\repository\org\codehaus\plexus\plexus-utils\3.4.2\plexus-utils-3.4.2.jar;C:\Users\sidie\.m2\repository\org\jsoup\jsoup\1.15.3\jsoup-1.15.3.jar;C:\Users\sidie\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\sidie\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\sidie\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\sidie\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\sidie\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\sidie\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\sidie\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\sidie\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20211018.2\owasp-java-html-sanitizer-20211018.2.jar;C:\Users\sidie\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\sidie\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\sidie\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\sidie\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.3\webdrivermanager-5.6.3.jar;C:\Users\sidie\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\sidie\.m2\repository\com\github\docker-java\docker-java\3.3.4\docker-java-3.3.4.jar;C:\Users\sidie\.m2\repository\com\github\docker-java\docker-java-core\3.3.4\docker-java-core-3.3.4.jar;C:\Users\sidie\.m2\repository\com\github\docker-java\docker-java-api\3.3.4\docker-java-api-3.3.4.jar;C:\Users\sidie\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\sidie\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\sidie\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\sidie\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\sidie\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.4\docker-java-transport-httpclient5-3.3.4.jar;C:\Users\sidie\.m2\repository\com\github\docker-java\docker-java-transport\3.3.4\docker-java-transport-3.3.4.jar;C:\Users\sidie\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\sidie\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\sidie\.m2\repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;C:\Users\sidie\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\sidie\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\sidie\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\sidie\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\sidie\.m2\repository\net\bytebuddy\byte-buddy\1.12.21\byte-buddy-1.12.21.jar;C:\Users\sidie\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\sidie\AppData\Local\Temp\surefire13484842083161606051\surefirebooter-20250728160521501_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\sidie\AppData\Local\Temp\surefire7989840836889822973\surefirebooter-20250728180102171_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.7+6-LTS"/>
@@ -61,7 +61,210 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="Produkte von A bis Z sortieren" classname="Sortierung der Produkte auf der Produkteseite" time="25.583">
+  <testcase name="Erfolgreicher Checkout #1" classname="Checkout-Prozess" time="20.095">
+    <system-out><![CDATA[
+@checkout
+Scenario Outline: Erfolgreicher Checkout                                           # src/test/resources/features/Checkout.feature:25
+  Given der Benutzer befindet sich auf der Login-Seite                             # stepdefinitions.LoginSteps.userIsOnLoginPage()
+  When der Benutzer gibt "standard_user" und "secret_sauce" ein                    # stepdefinitions.LoginSteps.enterCredentials(java.lang.String,java.lang.String)
+  Then wird die Produkte-Seite angezeigt                                           # stepdefinitions.LoginSteps.verifyProductsPage()
+  Given der Benutzer wählt das "Sauce Labs Backpack" aus                           # stepdefinitions.Products_CartSteps.iAmOnTheProductsPage(java.lang.String)
+  When der Benutzer klickt auf "Add to cart"                                       # stepdefinitions.Products_CartSteps.iAddAProductToTheCart()
+  And der Benutzer klickt auf den Warenkorb                                        # stepdefinitions.Products_CartSteps.iGoToTheCart()
+  Then befindet sich das "Sauce Labs Backpack" im Warenkorb                        # stepdefinitions.Products_CartSteps.theProductShouldBeInTheCart(java.lang.String)
+  And der Benutzer klickt auf den Button "Checkout"                                # stepdefinitions.CheckoutSteps.clickCheckoutButton()
+  When der Benutzer gibt "Max", "Muster" und "12345" ein                           # stepdefinitions.CheckoutSteps.enterCheckoutInformation(java.lang.String,java.lang.String,java.lang.String)
+  And klickt auf den Button "Continue"                                             # stepdefinitions.CheckoutSteps.clickContinueButton()
+  Then werden das "Sauce Labs Backpack" und die Einkaufsinformationen angezeigt    # stepdefinitions.CheckoutSteps.verifyCheckoutInformation(java.lang.String)
+  When der Benutzer klickt auf den Button "Finish"                                 # stepdefinitions.CheckoutSteps.clickFinishButton()
+  Then erhält der Benutzer eine Bestätigung seines Einkaufs                        # stepdefinitions.CheckoutSteps.verifyCheckoutCompleteMessage()
+  And klickt auf den Button "Back Home"                                            # stepdefinitions.CheckoutSteps.clickBackToProductsButton()
+No badge found
+  Then der Benutzer befindet sich auf der Produkt-Seite und der Warenkorb ist leer # stepdefinitions.CheckoutSteps.verifyUserOnProductsPage()
+]]></system-out>
+    <system-err><![CDATA[SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+Juli 28, 2025 6:01:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNUNG: Unable to find CDP implementation matching 138
+Juli 28, 2025 6:01:19 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNUNG: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Erfolgreicher Checkout #2" classname="Checkout-Prozess" time="13.27">
+    <system-out><![CDATA[
+@checkout
+Scenario Outline: Erfolgreicher Checkout                                            # src/test/resources/features/Checkout.feature:26
+  Given der Benutzer befindet sich auf der Login-Seite                              # stepdefinitions.LoginSteps.userIsOnLoginPage()
+  When der Benutzer gibt "standard_user" und "secret_sauce" ein                     # stepdefinitions.LoginSteps.enterCredentials(java.lang.String,java.lang.String)
+  Then wird die Produkte-Seite angezeigt                                            # stepdefinitions.LoginSteps.verifyProductsPage()
+  Given der Benutzer wählt das "Sauce Labs Bolt T-Shirt" aus                        # stepdefinitions.Products_CartSteps.iAmOnTheProductsPage(java.lang.String)
+  When der Benutzer klickt auf "Add to cart"                                        # stepdefinitions.Products_CartSteps.iAddAProductToTheCart()
+  And der Benutzer klickt auf den Warenkorb                                         # stepdefinitions.Products_CartSteps.iGoToTheCart()
+  Then befindet sich das "Sauce Labs Bolt T-Shirt" im Warenkorb                     # stepdefinitions.Products_CartSteps.theProductShouldBeInTheCart(java.lang.String)
+  And der Benutzer klickt auf den Button "Checkout"                                 # stepdefinitions.CheckoutSteps.clickCheckoutButton()
+  When der Benutzer gibt "Lisa", "Schmidt" und "98765" ein                          # stepdefinitions.CheckoutSteps.enterCheckoutInformation(java.lang.String,java.lang.String,java.lang.String)
+  And klickt auf den Button "Continue"                                              # stepdefinitions.CheckoutSteps.clickContinueButton()
+  Then werden das "Sauce Labs Bolt T-Shirt" und die Einkaufsinformationen angezeigt # stepdefinitions.CheckoutSteps.verifyCheckoutInformation(java.lang.String)
+  When der Benutzer klickt auf den Button "Finish"                                  # stepdefinitions.CheckoutSteps.clickFinishButton()
+  Then erhält der Benutzer eine Bestätigung seines Einkaufs                         # stepdefinitions.CheckoutSteps.verifyCheckoutCompleteMessage()
+  And klickt auf den Button "Back Home"                                             # stepdefinitions.CheckoutSteps.clickBackToProductsButton()
+No badge found
+  Then der Benutzer befindet sich auf der Produkt-Seite und der Warenkorb ist leer  # stepdefinitions.CheckoutSteps.verifyUserOnProductsPage()
+]]></system-out>
+    <system-err><![CDATA[Juli 28, 2025 6:01:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNUNG: Unable to find CDP implementation matching 138
+Juli 28, 2025 6:01:33 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNUNG: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Erfolgreiches Login" classname="Login Feature" time="10.127">
+    <system-out><![CDATA[
+@Login
+Scenario: Erfolgreiches Login                                   # src/test/resources/features/Login.feature:4
+  Given der Benutzer befindet sich auf der Login-Seite          # stepdefinitions.LoginSteps.userIsOnLoginPage()
+  When der Benutzer gibt "standard_user" und "secret_sauce" ein # stepdefinitions.LoginSteps.enterCredentials(java.lang.String,java.lang.String)
+  Then wird die Produkte-Seite angezeigt                        # stepdefinitions.LoginSteps.verifyProductsPage()
+]]></system-out>
+    <system-err><![CDATA[Juli 28, 2025 6:01:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNUNG: Unable to find CDP implementation matching 138
+Juli 28, 2025 6:01:46 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNUNG: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Erfolgreiches Login mit mehreren Benutzer #1" classname="Login Feature" time="7.965">
+    <system-out><![CDATA[
+@Login
+Scenario Outline: Erfolgreiches Login mit mehreren Benutzer     # src/test/resources/features/Login.feature:16
+  Given der Benutzer befindet sich auf der Login-Seite          # stepdefinitions.LoginSteps.userIsOnLoginPage()
+  When der Benutzer gibt "standard_user" und "secret_sauce" ein # stepdefinitions.LoginSteps.enterCredentials(java.lang.String,java.lang.String)
+  Then wird die Produkte-Seite angezeigt                        # stepdefinitions.LoginSteps.verifyProductsPage()
+]]></system-out>
+    <system-err><![CDATA[Juli 28, 2025 6:01:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNUNG: Unable to find CDP implementation matching 138
+Juli 28, 2025 6:01:56 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNUNG: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Erfolgreiches Login mit mehreren Benutzer #2" classname="Login Feature" time="8.203">
+    <system-out><![CDATA[
+@Login
+Scenario Outline: Erfolgreiches Login mit mehreren Benutzer    # src/test/resources/features/Login.feature:17
+  Given der Benutzer befindet sich auf der Login-Seite         # stepdefinitions.LoginSteps.userIsOnLoginPage()
+  When der Benutzer gibt "problem_user" und "secret_sauce" ein # stepdefinitions.LoginSteps.enterCredentials(java.lang.String,java.lang.String)
+  Then wird die Produkte-Seite angezeigt                       # stepdefinitions.LoginSteps.verifyProductsPage()
+]]></system-out>
+    <system-err><![CDATA[Juli 28, 2025 6:02:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNUNG: Unable to find CDP implementation matching 138
+Juli 28, 2025 6:02:04 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNUNG: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Erfolgreiches Login mit mehreren Benutzer #3" classname="Login Feature" time="13.355">
+    <system-out><![CDATA[
+@Login
+Scenario Outline: Erfolgreiches Login mit mehreren Benutzer               # src/test/resources/features/Login.feature:18
+  Given der Benutzer befindet sich auf der Login-Seite                    # stepdefinitions.LoginSteps.userIsOnLoginPage()
+  When der Benutzer gibt "performance_glitch_user" und "secret_sauce" ein # stepdefinitions.LoginSteps.enterCredentials(java.lang.String,java.lang.String)
+  Then wird die Produkte-Seite angezeigt                                  # stepdefinitions.LoginSteps.verifyProductsPage()
+]]></system-out>
+    <system-err><![CDATA[Juli 28, 2025 6:02:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNUNG: Unable to find CDP implementation matching 138
+Juli 28, 2025 6:02:11 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNUNG: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Fehlgeschlagenes Login" classname="Login Feature" time="10.43">
+    <system-out><![CDATA[
+@Login
+Scenario: Fehlgeschlagenes Login                                  # src/test/resources/features/Login.feature:20
+  Given der Benutzer befindet sich auf der Login-Seite            # stepdefinitions.LoginSteps.userIsOnLoginPage()
+  When der Benutzer gibt "locked_out_user" und "secret_sauce" ein # stepdefinitions.LoginSteps.enterCredentials(java.lang.String,java.lang.String)
+  Then wird das error_Message angezeigt                           # stepdefinitions.LoginSteps.verifyErrorMessage()
+]]></system-out>
+    <system-err><![CDATA[Juli 28, 2025 6:02:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNUNG: Unable to find CDP implementation matching 138
+Juli 28, 2025 6:02:24 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNUNG: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Erfolgreiches Logout" classname="Logout Feature" time="9.491">
+    <system-out><![CDATA[
+@Logout
+Scenario: Erfolgreiches Logout                                  # src/test/resources/features/Logout.feature:9
+  Given der Benutzer befindet sich auf der Login-Seite          # stepdefinitions.LoginSteps.userIsOnLoginPage()
+  When der Benutzer gibt "standard_user" und "secret_sauce" ein # stepdefinitions.LoginSteps.enterCredentials(java.lang.String,java.lang.String)
+  Then wird die Produkte-Seite angezeigt                        # stepdefinitions.LoginSteps.verifyProductsPage()
+  Given der Benutzer klickt auf das Burger-Menü                 # stepdefinitions.LogoutSteps.clickOnBurgerMenu()
+  When der Benutzer wählt "Logout" aus                          # stepdefinitions.LogoutSteps.selectLogout()
+  Then wird die Login-Seite angezeigt                           # stepdefinitions.LogoutSteps.verifyLoginPageDisplayed()
+]]></system-out>
+    <system-err><![CDATA[Juli 28, 2025 6:02:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNUNG: Unable to find CDP implementation matching 138
+Juli 28, 2025 6:02:35 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNUNG: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Navigation zur About-Seite" classname="Seitennavigation über das Menü" time="20.42">
+    <system-out><![CDATA[
+@Navigation @About
+Scenario: Navigation zur About-Seite                            # src/test/resources/features/PageNavigation.feature:10
+  Given der Benutzer befindet sich auf der Login-Seite          # stepdefinitions.LoginSteps.userIsOnLoginPage()
+  When der Benutzer gibt "standard_user" und "secret_sauce" ein # stepdefinitions.LoginSteps.enterCredentials(java.lang.String,java.lang.String)
+  Then wird die Produkte-Seite angezeigt                        # stepdefinitions.LoginSteps.verifyProductsPage()
+  Given der Benutzer klickt auf das Burger-Menü                 # stepdefinitions.LogoutSteps.clickOnBurgerMenu()
+  When der Benutzer wählt "About" aus                           # stepdefinitions.PageNavigationSteps.userNavigatesToProductsPage()
+  Then wird die About-Seite geöffnet                            # stepdefinitions.PageNavigationSteps.userSeesProductsDisplayed()
+]]></system-out>
+    <system-err><![CDATA[Juli 28, 2025 6:02:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNUNG: Unable to find CDP implementation matching 138
+Juli 28, 2025 6:02:44 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNUNG: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Navigation über &quot;Reset App State&quot; #1" classname="Seitennavigation über das Menü" time="7.894">
+    <system-out><![CDATA[
+@Navigation @Reset
+Scenario Outline: Navigation über "Reset App State"             # src/test/resources/features/PageNavigation.feature:25
+  Given der Benutzer befindet sich auf der Login-Seite          # stepdefinitions.LoginSteps.userIsOnLoginPage()
+  When der Benutzer gibt "standard_user" und "secret_sauce" ein # stepdefinitions.LoginSteps.enterCredentials(java.lang.String,java.lang.String)
+  Then wird die Produkte-Seite angezeigt                        # stepdefinitions.LoginSteps.verifyProductsPage()
+  Given der Benutzer wählt das "Sauce Labs Backpack" aus        # stepdefinitions.Products_CartSteps.iAmOnTheProductsPage(java.lang.String)
+  When der Benutzer klickt auf "Add to cart" im Warenkorb       # stepdefinitions.PageNavigationSteps.userAddsProductToCart()
+  And der Benutzer klickt auf das Burger-Menü im Warenkorb      # stepdefinitions.PageNavigationSteps.userClicksOnBurgerMenuInCart()
+  When der Benutzer wählt "Reset App State" aus                 # stepdefinitions.PageNavigationSteps.userClicksOnResetAppState()
+No badge found
+No badge found
+  Then ist der Warenkorb leer                                   # stepdefinitions.Products_CartSteps.emptyCart()
+]]></system-out>
+    <system-err><![CDATA[Juli 28, 2025 6:03:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNUNG: Unable to find CDP implementation matching 138
+Juli 28, 2025 6:03:05 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNUNG: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Navigation über &quot;Reset App State&quot; #2" classname="Seitennavigation über das Menü" time="8.877">
+    <system-out><![CDATA[
+@Navigation @Reset
+Scenario Outline: Navigation über "Reset App State"             # src/test/resources/features/PageNavigation.feature:26
+  Given der Benutzer befindet sich auf der Login-Seite          # stepdefinitions.LoginSteps.userIsOnLoginPage()
+  When der Benutzer gibt "standard_user" und "secret_sauce" ein # stepdefinitions.LoginSteps.enterCredentials(java.lang.String,java.lang.String)
+  Then wird die Produkte-Seite angezeigt                        # stepdefinitions.LoginSteps.verifyProductsPage()
+  Given der Benutzer wählt das "Sauce Labs Bolt T-Shirt" aus    # stepdefinitions.Products_CartSteps.iAmOnTheProductsPage(java.lang.String)
+  When der Benutzer klickt auf "Add to cart" im Warenkorb       # stepdefinitions.PageNavigationSteps.userAddsProductToCart()
+  And der Benutzer klickt auf das Burger-Menü im Warenkorb      # stepdefinitions.PageNavigationSteps.userClicksOnBurgerMenuInCart()
+  When der Benutzer wählt "Reset App State" aus                 # stepdefinitions.PageNavigationSteps.userClicksOnResetAppState()
+No badge found
+No badge found
+  Then ist der Warenkorb leer                                   # stepdefinitions.Products_CartSteps.emptyCart()
+]]></system-out>
+    <system-err><![CDATA[Juli 28, 2025 6:03:13 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNUNG: Unable to find CDP implementation matching 138
+Juli 28, 2025 6:03:13 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNUNG: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Produkte von A bis Z sortieren" classname="Sortierung der Produkte auf der Produkteseite" time="7.294">
     <system-out><![CDATA[
 @Sorting @SortAZ
 Scenario: Produkte von A bis Z sortieren                        # src/test/resources/features/ProductSorting.feature:10
@@ -71,16 +274,13 @@ Scenario: Produkte von A bis Z sortieren                        # src/test/resou
   When der Benutzer sortiert die Produkte nach "Name (A to Z)"  # stepdefinitions.ProductSortingSteps.userSortsProducts(java.lang.String)
   Then sind die Produktnamen alphabetisch aufsteigend sortiert  # stepdefinitions.ProductSortingSteps.verifyProductsSortedAlphabetically()
 ]]></system-out>
-    <system-err><![CDATA[SLF4J: No SLF4J providers were found.
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
-Juli 28, 2025 4:05:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Juli 28, 2025 6:03:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNUNG: Unable to find CDP implementation matching 138
-Juli 28, 2025 4:05:47 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Juli 28, 2025 6:03:22 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNUNG: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Produkte von Z bis A sortieren" classname="Sortierung der Produkte auf der Produkteseite" time="9.918">
+  <testcase name="Produkte von Z bis A sortieren" classname="Sortierung der Produkte auf der Produkteseite" time="7.859">
     <system-out><![CDATA[
 @Sorting @SortZA
 Scenario: Produkte von Z bis A sortieren                        # src/test/resources/features/ProductSorting.feature:15
@@ -90,13 +290,13 @@ Scenario: Produkte von Z bis A sortieren                        # src/test/resou
   When der Benutzer sortiert die Produkte nach "Name (Z to A)"  # stepdefinitions.ProductSortingSteps.userSortsProducts(java.lang.String)
   Then sind die Produktnamen alphabetisch absteigend sortiert   # stepdefinitions.ProductSortingSteps.verifyProductsSortedInDescendingOrder()
 ]]></system-out>
-    <system-err><![CDATA[Juli 28, 2025 4:05:58 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Juli 28, 2025 6:03:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNUNG: Unable to find CDP implementation matching 138
-Juli 28, 2025 4:05:58 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Juli 28, 2025 6:03:29 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNUNG: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Produkte nach Preis aufsteigend sortieren" classname="Sortierung der Produkte auf der Produkteseite" time="8.893">
+  <testcase name="Produkte nach Preis aufsteigend sortieren" classname="Sortierung der Produkte auf der Produkteseite" time="8.318">
     <system-out><![CDATA[
 @Sorting @SortLowHigh
 Scenario: Produkte nach Preis aufsteigend sortieren                  # src/test/resources/features/ProductSorting.feature:20
@@ -106,13 +306,13 @@ Scenario: Produkte nach Preis aufsteigend sortieren                  # src/test/
   When der Benutzer sortiert die Produkte nach "Price (low to high)" # stepdefinitions.ProductSortingSteps.userSortsProducts(java.lang.String)
   Then sind die Produktpreise aufsteigend sortiert                   # stepdefinitions.ProductSortingSteps.verifyProductPricesSortedAscending()
 ]]></system-out>
-    <system-err><![CDATA[Juli 28, 2025 4:06:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Juli 28, 2025 6:03:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNUNG: Unable to find CDP implementation matching 138
-Juli 28, 2025 4:06:07 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Juli 28, 2025 6:03:36 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNUNG: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="Produkte nach Preis absteigend sortieren" classname="Sortierung der Produkte auf der Produkteseite" time="7.53">
+  <testcase name="Produkte nach Preis absteigend sortieren" classname="Sortierung der Produkte auf der Produkteseite" time="7.521">
     <system-out><![CDATA[
 @Sorting @SortHighLow
 Scenario: Produkte nach Preis absteigend sortieren                   # src/test/resources/features/ProductSorting.feature:25
@@ -122,9 +322,189 @@ Scenario: Produkte nach Preis absteigend sortieren                   # src/test/
   When der Benutzer sortiert die Produkte nach "Price (high to low)" # stepdefinitions.ProductSortingSteps.userSortsProducts(java.lang.String)
   Then sind die Produktpreise absteigend sortiert                    # stepdefinitions.ProductSortingSteps.verifyProductPricesSortedDescending()
 ]]></system-out>
-    <system-err><![CDATA[Juli 28, 2025 4:06:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Juli 28, 2025 6:03:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNUNG: Unable to find CDP implementation matching 138
-Juli 28, 2025 4:06:15 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Juli 28, 2025 6:03:45 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNUNG: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Einzelnes Produkt zum Warenkorb hinzufügen #1" classname="Produktauswahl und Warenkorb" time="8.515">
+    <system-out><![CDATA[
+@Cart @SingleProduct
+Scenario Outline: Einzelnes Produkt zum Warenkorb hinzufügen         # src/test/resources/features/Products_Cart.feature:22
+  Given der Benutzer befindet sich auf der Login-Seite               # stepdefinitions.LoginSteps.userIsOnLoginPage()
+  When der Benutzer gibt "standard_user" und "secret_sauce" ein      # stepdefinitions.LoginSteps.enterCredentials(java.lang.String,java.lang.String)
+  Then wird die Produkte-Seite angezeigt                             # stepdefinitions.LoginSteps.verifyProductsPage()
+  Given der Benutzer wählt das "Sauce Labs Backpack" aus             # stepdefinitions.Products_CartSteps.iAmOnTheProductsPage(java.lang.String)
+  When der Benutzer klickt auf "Add to cart"                         # stepdefinitions.Products_CartSteps.iAddAProductToTheCart()
+  And der Benutzer klickt auf den Warenkorb                          # stepdefinitions.Products_CartSteps.iGoToTheCart()
+  Then befindet sich das "Sauce Labs Backpack" im Warenkorb          # stepdefinitions.Products_CartSteps.theProductShouldBeInTheCart(java.lang.String)
+Produkt wurde entfernt: Sauce Labs Backpack
+  When der Benutzer entfernt das "Sauce Labs Backpack" aus Warenkorb # stepdefinitions.Products_CartSteps.removeFromCart(java.lang.String)
+No badge found
+No badge found
+  Then ist der Warenkorb leer                                        # stepdefinitions.Products_CartSteps.emptyCart()
+]]></system-out>
+    <system-err><![CDATA[Juli 28, 2025 6:03:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNUNG: Unable to find CDP implementation matching 138
+Juli 28, 2025 6:03:53 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNUNG: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Einzelnes Produkt zum Warenkorb hinzufügen #2" classname="Produktauswahl und Warenkorb" time="8.203">
+    <system-out><![CDATA[
+@Cart @SingleProduct
+Scenario Outline: Einzelnes Produkt zum Warenkorb hinzufügen             # src/test/resources/features/Products_Cart.feature:23
+  Given der Benutzer befindet sich auf der Login-Seite                   # stepdefinitions.LoginSteps.userIsOnLoginPage()
+  When der Benutzer gibt "standard_user" und "secret_sauce" ein          # stepdefinitions.LoginSteps.enterCredentials(java.lang.String,java.lang.String)
+  Then wird die Produkte-Seite angezeigt                                 # stepdefinitions.LoginSteps.verifyProductsPage()
+  Given der Benutzer wählt das "Sauce Labs Bolt T-Shirt" aus             # stepdefinitions.Products_CartSteps.iAmOnTheProductsPage(java.lang.String)
+  When der Benutzer klickt auf "Add to cart"                             # stepdefinitions.Products_CartSteps.iAddAProductToTheCart()
+  And der Benutzer klickt auf den Warenkorb                              # stepdefinitions.Products_CartSteps.iGoToTheCart()
+  Then befindet sich das "Sauce Labs Bolt T-Shirt" im Warenkorb          # stepdefinitions.Products_CartSteps.theProductShouldBeInTheCart(java.lang.String)
+Produkt wurde entfernt: Sauce Labs Bolt T-Shirt
+  When der Benutzer entfernt das "Sauce Labs Bolt T-Shirt" aus Warenkorb # stepdefinitions.Products_CartSteps.removeFromCart(java.lang.String)
+No badge found
+No badge found
+  Then ist der Warenkorb leer                                            # stepdefinitions.Products_CartSteps.emptyCart()
+]]></system-out>
+    <system-err><![CDATA[Juli 28, 2025 6:04:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNUNG: Unable to find CDP implementation matching 138
+Juli 28, 2025 6:04:01 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNUNG: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Mehrere Produkte in Warenkorb hinzufügen und entfernen" classname="Produktauswahl und Warenkorb" time="8.429">
+    <system-out><![CDATA[
+@Cart @WarenkorbTabelle
+Scenario Outline: Mehrere Produkte in Warenkorb hinzufügen und entfernen # src/test/resources/features/Products_Cart.feature:26
+  Given der Benutzer befindet sich auf der Login-Seite                   # stepdefinitions.LoginSteps.userIsOnLoginPage()
+  When der Benutzer gibt "standard_user" und "secret_sauce" ein          # stepdefinitions.LoginSteps.enterCredentials(java.lang.String,java.lang.String)
+  Then wird die Produkte-Seite angezeigt                                 # stepdefinitions.LoginSteps.verifyProductsPage()
+  Given der Benutzer wählt die folgenden Produkte aus:                   # stepdefinitions.Products_CartSteps.iSelectProducts(io.cucumber.datatable.DataTable)
+    | Sauce Labs Backpack     |
+    | Sauce Labs Bolt T-Shirt |
+  When der Benutzer klickt auf den Warenkorb                             # stepdefinitions.Products_CartSteps.iGoToTheCart()
+  Then enthält der Warenkorb folgende Produkte:                          # stepdefinitions.Products_CartSteps.theCartShouldContainProducts(io.cucumber.datatable.DataTable)
+    | Sauce Labs Backpack     |
+    | Sauce Labs Bolt T-Shirt |
+Produkt wurde entfernt: Sauce Labs Backpack
+Produkt wurde entfernt: Sauce Labs Bolt T-Shirt
+  When der Benutzer entfernt die Produkte aus Warenkorb                  # stepdefinitions.Products_CartSteps.removeProductsFromCart(io.cucumber.datatable.DataTable)
+    | Sauce Labs Backpack     |
+    | Sauce Labs Bolt T-Shirt |
+No badge found
+No badge found
+  Then ist der Warenkorb leer                                            # stepdefinitions.Products_CartSteps.emptyCart()
+]]></system-out>
+    <system-err><![CDATA[Juli 28, 2025 6:04:10 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNUNG: Unable to find CDP implementation matching 138
+Juli 28, 2025 6:04:10 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNUNG: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Überprüfung der Produktanzeige mit Preisen #1" classname="Anzeige von Produktnamen und Preisen" time="9.505">
+    <system-out><![CDATA[
+@isProductPageDisplayed @ProductPriceCheck
+Scenario Outline: Überprüfung der Produktanzeige mit Preisen     # src/test/resources/features/Products_Price.feature:17
+  Given der Benutzer befindet sich auf der Login-Seite           # stepdefinitions.LoginSteps.userIsOnLoginPage()
+  When der Benutzer gibt "standard_user" und "secret_sauce" ein  # stepdefinitions.LoginSteps.enterCredentials(java.lang.String,java.lang.String)
+  Then wird die Produkte-Seite angezeigt                         # stepdefinitions.LoginSteps.verifyProductsPage()
+  Given der Benutzer sieht das Produkt "Sauce Labs Backpack"     # stepdefinitions.Products_Price.userSeesProduct(java.lang.String)
+  Then wird der "$29.99" für das "Sauce Labs Backpack" angezeigt # stepdefinitions.Products_Price.verifyProductPrice(java.lang.String,java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Juli 28, 2025 6:04:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNUNG: Unable to find CDP implementation matching 138
+Juli 28, 2025 6:04:19 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNUNG: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Überprüfung der Produktanzeige mit Preisen #2" classname="Anzeige von Produktnamen und Preisen" time="9.568">
+    <system-out><![CDATA[
+@isProductPageDisplayed @ProductPriceCheck
+Scenario Outline: Überprüfung der Produktanzeige mit Preisen      # src/test/resources/features/Products_Price.feature:18
+  Given der Benutzer befindet sich auf der Login-Seite            # stepdefinitions.LoginSteps.userIsOnLoginPage()
+  When der Benutzer gibt "standard_user" und "secret_sauce" ein   # stepdefinitions.LoginSteps.enterCredentials(java.lang.String,java.lang.String)
+  Then wird die Produkte-Seite angezeigt                          # stepdefinitions.LoginSteps.verifyProductsPage()
+  Given der Benutzer sieht das Produkt "Sauce Labs Bike Light"    # stepdefinitions.Products_Price.userSeesProduct(java.lang.String)
+  Then wird der "$9.99" für das "Sauce Labs Bike Light" angezeigt # stepdefinitions.Products_Price.verifyProductPrice(java.lang.String,java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Juli 28, 2025 6:04:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNUNG: Unable to find CDP implementation matching 138
+Juli 28, 2025 6:04:28 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNUNG: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Überprüfung der Produktanzeige mit Preisen #3" classname="Anzeige von Produktnamen und Preisen" time="7.32">
+    <system-out><![CDATA[
+@isProductPageDisplayed @ProductPriceCheck
+Scenario Outline: Überprüfung der Produktanzeige mit Preisen         # src/test/resources/features/Products_Price.feature:19
+  Given der Benutzer befindet sich auf der Login-Seite               # stepdefinitions.LoginSteps.userIsOnLoginPage()
+  When der Benutzer gibt "standard_user" und "secret_sauce" ein      # stepdefinitions.LoginSteps.enterCredentials(java.lang.String,java.lang.String)
+  Then wird die Produkte-Seite angezeigt                             # stepdefinitions.LoginSteps.verifyProductsPage()
+  Given der Benutzer sieht das Produkt "Sauce Labs Bolt T-Shirt"     # stepdefinitions.Products_Price.userSeesProduct(java.lang.String)
+  Then wird der "$15.99" für das "Sauce Labs Bolt T-Shirt" angezeigt # stepdefinitions.Products_Price.verifyProductPrice(java.lang.String,java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Juli 28, 2025 6:04:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNUNG: Unable to find CDP implementation matching 138
+Juli 28, 2025 6:04:37 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNUNG: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Überprüfung der Produktanzeige und Preis im Warenkorb #1" classname="Anzeige von Produktnamen und Preisen" time="7.688">
+    <system-out><![CDATA[
+@isProductPageDisplayed @CartPriceCheck
+Scenario: Überprüfung der Produktanzeige und Preis im Warenkorb              # src/test/resources/features/Products_Price.feature:30
+  Given der Benutzer befindet sich auf der Login-Seite                       # stepdefinitions.LoginSteps.userIsOnLoginPage()
+  When der Benutzer gibt "standard_user" und "secret_sauce" ein              # stepdefinitions.LoginSteps.enterCredentials(java.lang.String,java.lang.String)
+  Then wird die Produkte-Seite angezeigt                                     # stepdefinitions.LoginSteps.verifyProductsPage()
+  Given der Benutzer wählt das "Sauce Labs Backpack" aus                     # stepdefinitions.Products_CartSteps.iAmOnTheProductsPage(java.lang.String)
+  When der Benutzer klickt auf "Add to cart"                                 # stepdefinitions.Products_CartSteps.iAddAProductToTheCart()
+  And der Benutzer klickt auf den Warenkorb                                  # stepdefinitions.Products_CartSteps.iGoToTheCart()
+  Then befindet sich das "Sauce Labs Backpack" im Warenkorb                  # stepdefinitions.Products_CartSteps.theProductShouldBeInTheCart(java.lang.String)
+  And wird der "$29.99" für das "Sauce Labs Backpack" im Warenkorb angezeigt # stepdefinitions.Products_Price.verifyPriceAndProductName(java.lang.String,java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Juli 28, 2025 6:04:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNUNG: Unable to find CDP implementation matching 138
+Juli 28, 2025 6:04:45 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNUNG: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Überprüfung der Produktanzeige und Preis im Warenkorb #2" classname="Anzeige von Produktnamen und Preisen" time="8.665">
+    <system-out><![CDATA[
+@isProductPageDisplayed @CartPriceCheck
+Scenario: Überprüfung der Produktanzeige und Preis im Warenkorb               # src/test/resources/features/Products_Price.feature:31
+  Given der Benutzer befindet sich auf der Login-Seite                        # stepdefinitions.LoginSteps.userIsOnLoginPage()
+  When der Benutzer gibt "standard_user" und "secret_sauce" ein               # stepdefinitions.LoginSteps.enterCredentials(java.lang.String,java.lang.String)
+  Then wird die Produkte-Seite angezeigt                                      # stepdefinitions.LoginSteps.verifyProductsPage()
+  Given der Benutzer wählt das "Sauce Labs Bike Light" aus                    # stepdefinitions.Products_CartSteps.iAmOnTheProductsPage(java.lang.String)
+  When der Benutzer klickt auf "Add to cart"                                  # stepdefinitions.Products_CartSteps.iAddAProductToTheCart()
+  And der Benutzer klickt auf den Warenkorb                                   # stepdefinitions.Products_CartSteps.iGoToTheCart()
+  Then befindet sich das "Sauce Labs Bike Light" im Warenkorb                 # stepdefinitions.Products_CartSteps.theProductShouldBeInTheCart(java.lang.String)
+  And wird der "$9.99" für das "Sauce Labs Bike Light" im Warenkorb angezeigt # stepdefinitions.Products_Price.verifyPriceAndProductName(java.lang.String,java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Juli 28, 2025 6:04:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNUNG: Unable to find CDP implementation matching 138
+Juli 28, 2025 6:04:52 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNUNG: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Überprüfung der Produktanzeige und Preis im Warenkorb #3" classname="Anzeige von Produktnamen und Preisen" time="11.104">
+    <system-out><![CDATA[
+@isProductPageDisplayed @CartPriceCheck
+Scenario: Überprüfung der Produktanzeige und Preis im Warenkorb                  # src/test/resources/features/Products_Price.feature:32
+  Given der Benutzer befindet sich auf der Login-Seite                           # stepdefinitions.LoginSteps.userIsOnLoginPage()
+  When der Benutzer gibt "standard_user" und "secret_sauce" ein                  # stepdefinitions.LoginSteps.enterCredentials(java.lang.String,java.lang.String)
+  Then wird die Produkte-Seite angezeigt                                         # stepdefinitions.LoginSteps.verifyProductsPage()
+  Given der Benutzer wählt das "Sauce Labs Bolt T-Shirt" aus                     # stepdefinitions.Products_CartSteps.iAmOnTheProductsPage(java.lang.String)
+  When der Benutzer klickt auf "Add to cart"                                     # stepdefinitions.Products_CartSteps.iAddAProductToTheCart()
+  And der Benutzer klickt auf den Warenkorb                                      # stepdefinitions.Products_CartSteps.iGoToTheCart()
+  Then befindet sich das "Sauce Labs Bolt T-Shirt" im Warenkorb                  # stepdefinitions.Products_CartSteps.theProductShouldBeInTheCart(java.lang.String)
+  And wird der "$15.99" für das "Sauce Labs Bolt T-Shirt" im Warenkorb angezeigt # stepdefinitions.Products_Price.verifyPriceAndProductName(java.lang.String,java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Juli 28, 2025 6:05:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNUNG: Unable to find CDP implementation matching 138
+Juli 28, 2025 6:05:01 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNUNG: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
