@@ -30,8 +30,6 @@ public class PageNavigationSteps {
 
     @Then("wird die About-Seite geöffnet")
     public void userSeesProductsDisplayed() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[normalize-space(text())='Sign in']")));
         // Verify that the About page is displayed
         boolean isAboutPageDisplayed = productsPage.assertAboutPageVisible();    
         // Assert that the About page is displayed

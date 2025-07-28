@@ -8,7 +8,7 @@ import org.junit.runner.RunWith; // Import JUnit runner
     glue = {"stepdefinitions", "utils"}, // Package containing step definitions
     plugin = {"pretty", "html:target/cucumber-reports.html"}, // Plugins for reporting
     monochrome = true// Make console output more readable
-    //tags = "@Logout" //Run tests with the @Login tag
+    //tags = "@Navigation" //Run tests with the @Login tag
 ) // Cucumber options for test execution
 
 public class TestRunner {
