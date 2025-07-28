@@ -128,14 +128,17 @@ public class ProductsPage {
     }
 
     public boolean assertAboutPageVisible() {
-        try {
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-            WebElement signIn = wait.until(ExpectedConditions.visibilityOfElementLocated(signInButton));
-            // Check if the sign-in button is displayed to confirm the About page is visible
-            return signIn.isDisplayed();
-        } catch (NoSuchElementException e) {
-            return false;
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+        // Kontextwechsel falls neues Fenster
+        for (String windowHandle : driver.getWindowHandles()) {
+            driver.switchTo().window(windowHandle);
+            if (driver.getCurrentUrl().contains("saucelabs.com")) {
+                return true;
+            }
         }
+
+        return false;
 
     }
 
@@ -151,7 +154,7 @@ public class ProductsPage {
         return new ArrayList<>(names).equals(names.stream().sorted().toList());
     }
 
-        public boolean isProductNameSortedDescending() {
+    public boolean isProductNameSortedDescending() {
         List<String> names = getProductNames();
         return new ArrayList<>(names).equals(names.stream().sorted(Comparator.reverseOrder()).toList());
     }
@@ -200,10 +203,10 @@ public class ProductsPage {
         return prices;
     }
 
-    public boolean areProductsSortedAlphabetically() {       
+    public boolean areProductsSortedAlphabetically() {
         List<String> productNames = getProductNames();
         List<String> sortedNames = new ArrayList<>(productNames);
         sortedNames.sort(String::compareToIgnoreCase);
-        return productNames.equals(sortedNames);        
+        return productNames.equals(sortedNames);
     }
 }
