@@ -4,13 +4,13 @@ import io.cucumber.junit.CucumberOptions;   // Import Cucumber options for test 
 import org.junit.runner.RunWith; // Import JUnit runner     
 @RunWith(Cucumber.class) // Specify that this class is a Cucumber test runner
 @CucumberOptions(
-    features = "src/test/resources/features", // Path to the feature files
-    glue = {"stepdefinitions", "utils"}, // Package containing step definitions
-    plugin = {"pretty", "html:target/cucumber-reports.html", "json:target/cucumber.json"}, // Plugins for reporting
-    monochrome = true// Make console output more readable
-    //tags = "@Navigation" //Run tests with the @Login tag
-) // Cucumber options for test execution
-
+    plugin = {
+        "pretty",
+        "html:target/cucumber-reports.html"
+    },
+    features = "src/test/resources/features",
+    glue = "stepdefinitions"
+)
 public class TestRunner {
     
 }
