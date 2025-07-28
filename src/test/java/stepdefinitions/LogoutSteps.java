@@ -12,11 +12,13 @@ import pages.ProductsPage;
 import utils.Hooks;
 
 public class LogoutSteps {
+    WebDriver driver;
+    ProductsPage productsPage;
+    LoginPage loginPage;
     
     // This class will contain step definitions related to user logout actions
-    WebDriver driver = Hooks.getDriver(); 
-    ProductsPage productsPage = new ProductsPage(driver); // Create an instance of ProductsPage
-    LoginPage loginPage = new LoginPage(driver); // Create an instance of LoginPage
+    driver = Hooks.getDriver(); 
+    productsPage = new ProductsPage(driver); // Create an instance of ProductsPage
      
     @Given("der Benutzer klickt auf das Burger-Menü")
     public void clickOnBurgerMenu() {
@@ -31,6 +33,7 @@ public class LogoutSteps {
     
     @Then("wird die Login-Seite angezeigt")
     public void verifyLoginPageDisplayed() {
+        loginPage = new LoginPage(driver);
         boolean loginPageVisible = loginPage.assertLoginPageVisible();
         // Verify that the login page is displayed      
          assertEquals("Die Login-Seite wurde nicht angezeigt nach dem Logout.", true, loginPageVisible);
