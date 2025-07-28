@@ -22,7 +22,7 @@ public class CheckoutSteps {
 
     @And("der Benutzer klickt auf den Button \"Checkout\"")
     public void clickCheckoutButton() {
-        driver = DriverFactory.getDriver();
+        driver = Hooks.getDriver();
         checkoutPage = new CheckoutPage(driver);
         checkoutPage.clickCheckout(); // Click the checkout button on the cart page
     }
