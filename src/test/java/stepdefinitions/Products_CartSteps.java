@@ -26,13 +26,15 @@ public class Products_CartSteps {
    // This class will contain step definitions related to product actions
    // such as adding products to the cart, removing them, etc.
 
-   WebDriver driver = Hooks.getDriver(); // Get the WebDriver instance from DriverFactory
+   WebDriver driver; // Get the WebDriver instance from DriverFactory
    LoginPage loginPage; // Create an instance of LoginPage
-   ProductsPage productsPage = new ProductsPage(driver); // Create an instance of ProductsPage
-   CartPage cartPage = new CartPage(driver); // Create an instance of CartPage
+   ProductsPage productsPage; // Create an instance of ProductsPage
+   CartPage cartPage; // Create an instance of CartPage
 
    @Given("der Benutzer wählt das {string} aus")
    public void iAmOnTheProductsPage(String product) {
+      driver = Hooks.getDriver();
+      productsPage = new ProductsPage(driver); 
       // click on the product Sauce Labs Backpack
       new WebDriverWait(driver, Duration.ofSeconds(10))
       .until(ExpectedConditions.visibilityOfElementLocated(By.className("inventory_list")));
@@ -70,6 +72,7 @@ public class Products_CartSteps {
 
    @Then("befindet sich das {string} im Warenkorb")
    public void theProductShouldBeInTheCart(String productName) {
+      cartPage = new CartPage(driver);
       String actualproductname = cartPage.getProductName(productName);
 
       if (actualproductname != null) {
