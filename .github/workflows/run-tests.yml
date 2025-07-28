@@ -1,6 +1,6 @@
 # GitHub Actions Workflow Datei
 
-name: Run All Cucumber Suites
+name: Run Cucumber Tests and Publish HTML Report
 
 on:
   push:
@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Set up Java
@@ -21,11 +21,16 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Build and Run Cucumber Tests
+      - name: Run Cucumber Tests
         run: mvn clean test -Dbrowser=chromeheadless
         
-      - name: Upload Cucumber HTML Report
-        uses: actions/upload-artifact@v4
+      - name: Prepare Cucumber HTML Report for GitHub Pages
+        run: |
+          mkdir -p report
+          cp target/cucumber-reports.html report/index.html
+
+      - name: Deploy HTML Report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          name: cucumber-report
-          path: target/cucumber-reports.html
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./report
