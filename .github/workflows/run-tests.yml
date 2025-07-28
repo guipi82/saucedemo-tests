@@ -23,5 +23,14 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Build and Run Cucumber Tests
+      - name: Build and Run Tests
         run: mvn clean test -Dbrowser=chromeheadless
+
+      - name: Generate HTML test report
+        run: mvn surefire-report:report-only
+
+      - name: Upload test report as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-report
+          path: target/site/surefire-report.html
