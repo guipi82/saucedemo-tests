@@ -20,7 +20,6 @@ public class PageNavigationSteps {
     
     WebDriver driver; // Get the WebDriver instance from Hooks
     ProductsPage productsPage; // Create an instance of ProductsPage
-    CartPage cartPage; // Create an instance of CartPage
     
 
     @When("der Benutzer wählt \"About\" aus")
