@@ -13,11 +13,12 @@ import utils.DriverFactory;
 
 public class LoginSteps {
     
-    WebDriver driver = DriverFactory.getDriver(); // Get the WebDriver instance from DriverFactory
+    WebDriver driver; // Get the WebDriver instance from DriverFactory
     LoginPage loginPage; // Create an instance of LoginPage
 
     @Given("der Benutzer befindet sich auf der Login-Seite")
     public void userIsOnLoginPage() {
+        driver = DriverFactory.getDriver();
         loginPage = new LoginPage(driver); // Initialize the LoginPage with the WebDriver instance
         loginPage.openLoginPage(); // Open the login page using the LoginPage class 
     }
@@ -29,6 +30,7 @@ public class LoginSteps {
     }
     @Then("wird die Produkte-Seite angezeigt")
     public void verifyProductsPage() {
+        driver = DriverFactory.getDriver();
         // Verify that the URL of the current page is the products page
         String currentUrl = driver.getCurrentUrl();
         if (!currentUrl.equals("https://www.saucedemo.com/inventory.html")) {
