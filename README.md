@@ -35,3 +35,5 @@ Tests:
     • Logout
     • Seitennavigation
     • Sortieren der Produkte
+
+![Tests](https://github.com/guipi82/saucedemo-tests/actions/workflows/run-tests.yml/badge.svg)
