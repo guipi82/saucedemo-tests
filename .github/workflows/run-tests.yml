@@ -5,8 +5,7 @@ name: Run All Cucumber Suites
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   test:
@@ -26,11 +25,11 @@ jobs:
       - name: Build and Run Tests
         run: mvn clean test -Dbrowser=chromeheadless
 
-      - name: Generate HTML test report
+      - name: Generate Surefire HTML test report
         run: mvn surefire-report:report-only
 
       - name: Upload test report as artifact
         uses: actions/upload-artifact@v4
         with:
-          name: test-report
+          name: surefire-report
           path: target/site/surefire-report.html
