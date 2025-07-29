@@ -24,7 +24,7 @@ jobs:
       - name: Run Cucumber Tests
         run: mvn clean test -Dbrowser=chromeheadless
         
-      - name: Prepare Cucumber HTML Report for GitHub Pages
+      - name: Prepare HTML Report
         run: |
           mkdir -p report
           cp -r target/cucumber-html-reports/* report/
