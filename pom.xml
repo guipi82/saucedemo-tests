@@ -121,7 +121,9 @@
           <configuration>
             <projectName>Saucedemo Tests</projectName>
             <outputDirectory>${project.build.directory}/cucumber-html-reports</outputDirectory>
-            <cucumberOutput>${project.build.directory}/cucumber-reports/cucumber.json</cucumberOutput>
+            <jsonFiles>
+              <param>${project.build.directory}/cucumber-reports/cucumber.json</param>
+            </jsonFiles>
           </configuration>
         </execution>
       </executions>
