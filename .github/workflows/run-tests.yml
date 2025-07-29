@@ -24,13 +24,11 @@ jobs:
       - name: Run Cucumber Tests
         run: mvn clean test -Dbrowser=chromeheadless
         
-      - name: Prepare HTML Report
-        run: |
-         mkdir -p report
-         cp target/cucumber-report.html report/index.html
+      - name: Generate Surefire HTML Report
+        run: mvn surefire-report:report-only
 
-      - name: Upload HTML Report as Artifact
+      - name: Upload HTML Test Report
         uses: actions/upload-artifact@v4
         with:
-          name: cucumber-report
-          path: target/cucumber-reports.html
+          name: surefire-report
+          path: target/site/surefire-report.html
