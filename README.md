@@ -38,5 +38,5 @@ Tests:
 
 ## 🔍 HTML-Testreport
 
-👉 [Hier klicken, um den aktuellen Report anzuzeigen](https://guipi82.github.io/saucedemo-tests/)
+
 
