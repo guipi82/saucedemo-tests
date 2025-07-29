@@ -36,4 +36,7 @@ Tests:
     • Seitennavigation
     • Sortieren der Produkte
 
-![Tests](https://github.com/guipi82/saucedemo-tests/actions/workflows/run-tests.yml/badge.svg)
+## 🔍 HTML-Testreport
+
+👉 [Hier klicken, um den aktuellen Report anzuzeigen](https://guipi82.github.io/saucedemo-tests/)
+
