@@ -21,12 +21,17 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Run Cucumber Tests
+      - name: Build and Run Cucumber Tests
         run: mvn clean test -Dbrowser=chromeheadless
 
-      - name: Upload Cucumber HTML Report
+      - name: Zip the Cucumber HTML Report
+        run: |
+          mkdir -p cucumber-report
+          cp target/cucumber-reports.html cucumber-report/index.html
+          zip -r cucumber-report.zip cucumber-report/
+
+      - name: Upload Cucumber Report ZIP
         uses: actions/upload-artifact@v4
         with:
-          name: cucumber-html-report
-          path: target/cucumber-html-reports/index.html 
-
+          name: cucumber-report
+          path: cucumber-report.zip
