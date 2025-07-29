@@ -27,7 +27,7 @@ jobs:
       - name: Prepare Cucumber HTML Report for GitHub Pages
         run: |
           mkdir -p report
-          cp target/cucumber-reports.html report/index.html
+          cp -r target/cucumber-html-reports/* report/
 
       - name: Deploy HTML Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
