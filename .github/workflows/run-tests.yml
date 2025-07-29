@@ -24,11 +24,11 @@ jobs:
       - name: Build and Run Cucumber Tests
         run: mvn clean test -Dbrowser=chromeheadless
 
-      - name: Zip the Cucumber HTML Report
-        run: |
-          mkdir -p cucumber-report
-          cp target/cucumber-reports.html cucumber-report/index.html
-          zip -r cucumber-report.zip cucumber-report/
+      - name: Upload HTML Report (direct .html file)
+        uses: actions/upload-artifact@v4
+        with:
+          name: cucumber-html-report
+          path: target/cucumber-reports.html
 
       - name: Upload Cucumber Report ZIP
         uses: actions/upload-artifact@v4
