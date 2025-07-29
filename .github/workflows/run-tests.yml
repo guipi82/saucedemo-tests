@@ -32,8 +32,8 @@ jobs:
           mkdir -p report
           cp -r target/cucumber-html-reports/* report/
 
-      - name: Deploy HTML Report to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Upload HTML Report as Artifact
+        uses: actions/upload-artifact@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./report
+          name: cucumber-html-report
+          path: report
