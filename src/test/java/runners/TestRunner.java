@@ -6,8 +6,7 @@ import org.junit.runner.RunWith; // Import JUnit runner
 @CucumberOptions(
     plugin = {
         "pretty",
-        "html:target/cucumber-html-report", 
-        "json:target/cucumber-report/cucumber.json"
+        "html:target/cucumber-html-report"
     },
     features = "src/test/resources/features",
     glue = {"stepdefinitions", "utils"}
