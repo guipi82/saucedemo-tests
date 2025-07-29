@@ -26,11 +26,11 @@ jobs:
         
       - name: Prepare HTML Report
         run: |
-          mkdir -p report
-          cp -r target/cucumber-html-reports/* report/
+         mkdir -p report
+         cp target/cucumber-report.html report/index.html
 
       - name: Upload HTML Report as Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: cucumber-html-report
-          path: report
+          name: cucumber-report
+          path: target/cucumber-reports.html
