@@ -14,46 +14,40 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import pages.CartPage;
 import pages.ProductsPage;
-import utils.DriverFactory;
 import utils.Hooks;
 
 public class Products_Price {
-    
-    // This class will contain step definitions related to product price verification
-    // such as checking the price of products, comparing prices, etc.
 
-    WebDriver driver; // Get the WebDriver instance from DriverFactory
-    ProductsPage productsPage; // Create an instance of ProductsPage
-    CartPage cartPage; // Create an instance of CartPage
-    
+    // This class will contain step definitions related to product price verification
+    WebDriver driver;
+    ProductsPage productsPage;
+    CartPage cartPage;
+
     @Given("der Benutzer sieht das Produkt {string}")
     public void userSeesProduct(String productName) {
         driver = Hooks.getDriver();
         productsPage = new ProductsPage(driver); 
-        // Warte, bis Produktseite sichtbar ist – z. B. Titel "Products"
         new WebDriverWait(driver, Duration.ofSeconds(5))
-        .until(ExpectedConditions.visibilityOfElementLocated(By.className("title")));
-        // Verify that the product is displayed
+            .until(ExpectedConditions.visibilityOfElementLocated(By.className("title")));
         boolean isProductDisplayed = productsPage.isProductDisplayed(productName);
         if (!isProductDisplayed) {
             throw new AssertionError("Das Produkt '" + productName + "' wurde nicht angezeigt.");
         }
     } 
     
-    //method to verify product price and Product name
     @Then("wird der {string} für das {string} angezeigt")
     public void verifyProductPrice(String expectedPrice, String productName) {
-        // Verify that the product price is displayed correctly     
+        driver = Hooks.getDriver(); // Sicherstellen, dass driver gesetzt ist
+        productsPage = new ProductsPage(driver); 
         String actualPrice = productsPage.getProductPrice(productName);
         assertEquals("Der Preis des Produkts stimmt nicht überein", expectedPrice, actualPrice);
     }    
     
     @And("wird der {string} für das {string} im Warenkorb angezeigt")
     public void verifyPriceAndProductName(String expectedPrice, String productName) {
-        cartPage = new CartPage(driver);
-        // Verify that the product name is displayed correctly
+        driver = Hooks.getDriver(); // HINZUGEFÜGT: driver sicher initialisieren
+        cartPage = new CartPage(driver); // CartPage korrekt mit gültigem Driver initialisieren
         String actualName = cartPage.getProductName(productName);
-       // Verify that the product price is displayed correctly     
         String actualPrice = cartPage.getProductPrice(productName);
         assertEquals("Der Preis des Produkts stimmt nicht überein", expectedPrice, actualPrice);
         assertEquals("Der Name des Produkts stimmt nicht überein", productName, actualName);
