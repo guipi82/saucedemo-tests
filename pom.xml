@@ -70,7 +70,7 @@
     <dependency>
       <groupId>net.masterthought</groupId>
       <artifactId>cucumber-reporting</artifactId>
-      <version>5.7.3</version>
+      <version>5.7.2</version>
     </dependency>
 
     <!-- WebDriverManager for managing browser drivers -->
@@ -110,7 +110,7 @@
     <plugin>
       <groupId>net.masterthought</groupId>
       <artifactId>maven-cucumber-reporting</artifactId>
-      <version>5.7.3</version>
+      <version>5.7.2</version>
       <executions>
         <execution>
           <id>generate-cucumber-html-report</id>
