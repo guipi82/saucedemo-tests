@@ -9,7 +9,7 @@ import org.junit.runner.RunWith; // Import JUnit runner
         "json:target/cucumber-reports/cucumber.json"
     },
     features = "src/test/resources/features",
-    glue = {"stepdefinitions", "utils"}
+    glue = "stepdefinitions"
 )
 public class TestRunner {
     
