@@ -6,7 +6,7 @@ import org.junit.runner.RunWith; // Import JUnit runner
 @CucumberOptions(
   plugin = {
     "pretty",
-    "html:target/cucumber-html-reports",         // HTML-Report wird erzeugt
+    "html:target/cucumber-html-reports", // HTML-Report wird erzeugt
     "json:target/cucumber-reports/cucumber.json" // Optional für JSON
   },
   features = "src/test/resources/features",
