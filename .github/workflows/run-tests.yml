@@ -21,8 +21,8 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Run Cucumber Tests & Generate HTML Report
-        run: mvn clean verify -Dbrowser=chromeheadless
+      - name: Run Cucumber Tests
+        run: mvn clean test -Dbrowser=chromeheadless
 
         
       - name: Prepare HTML Report
